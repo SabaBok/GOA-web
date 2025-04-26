@@ -58,6 +58,7 @@ header a{
     gap: 5px;
     align-items: center;
     position: relative;
+    z-index: 3333333;
     cursor: pointer;
 }
 .head-left ul li::after{
@@ -117,30 +118,33 @@ header a{
     justify-content: center; 
 }
 .sylabus{
-    border: 2px solid red;
     position: relative;
 }
-
-.idk{
-    display: none;
+.syl-li{
+    cursor: pointer;
+    position: relative;
+    z-index: 22222;
 }
-.drop-sylab{
-    position: absolute;
-    width: 800px;
-    bottom: -480px;
-    transform: translateX(-30%);
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,.25),
-    0 -4px 10px rgba(0, 0, 0, 0.4);
-    border-bottom: 1px solid #e1e3e7;
-    z-index: 1111;
-
+.idk{
     display: flex;
     gap: 20px;
     align-items: start;
     padding: 15px;
     color: #000;
     flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25),
+    0 -4px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #e1e3e7;
+    z-index: 1111;
+    width: 800px;
+}
+.drop-sylab{
+    bottom: -480px;
+    position: absolute;
+    padding-top: 60px;
+    transform: translateX(-30%);
+    display: none;
 }
 .sylab-left{
     box-shadow: 10px 5px 10px #00000025;

@@ -1,5 +1,5 @@
 let syl = document.querySelector(".sylabus")
-let idk = document.querySelector(".idk")
+let idk = document.querySelector(".drop-sylab")
 
 syl.addEventListener("mouseover",function(){
     idk.style.display = "block"
