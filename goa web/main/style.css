@@ -127,11 +127,11 @@ header a{
 }
 .drop-sylab{
     position: absolute;
-    width: 700px;
+    width: 800px;
     transform: translateX(-50%);
     left: 100%;
-    height: 410px;
-    bottom: -455px;
+    /* height: 420px; */
+    bottom: -500px;
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0,0,0,.25),
     0 -4px 10px rgba(0, 0, 0, 0.4);
@@ -141,21 +141,21 @@ header a{
     display: flex;
     gap: 20px;
     align-items: start;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 15px;
     color: #000;
     flex-wrap: wrap;
 }
 .sylab-left{
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    box-shadow: 10px 5px 10px #00000025;
     border-radius: 7px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 .syl-drop{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px solid black; */
 }
 .syl-text{
     display: flex;
