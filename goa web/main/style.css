@@ -16,7 +16,7 @@ header{
     width: 100%;
     height: 70px;
     color: #fff;
-    padding: 10px 0px;
+    padding: 10px 20px;
     position: relative;
     z-index: 22;
 }
@@ -108,12 +108,40 @@ header a{
     transform: scale(1);
 }
 .i{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #3963ff;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    justify-content: center; 
 }
+.sylab{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.drop-sylab{
+    position: absolute;
+    width: 300px;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 200px;
+    bottom: -230px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.25);
+    border-bottom: 1px solid #e1e3e7;
+    z-index: 111;
+}
+
+
 
 
 main{
@@ -129,16 +157,16 @@ main{
 .hero-img{
     width: 100%;
     height: 100%;
-    background: url(/images/hero.jpg) no-repeat center;
+    background: url(../images/hero.jpg) no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 9;
     display: flex;
     align-items: center;
+    justify-content: start;
     padding: 0px 100px;
 }
-.hero-img::after{
-    content: '';
+.hero-left{
     position: absolute;
     z-index: 10;
     left: 0;
@@ -147,6 +175,9 @@ main{
     width: 40%;
     height: 100%;
     box-shadow: 100px 0px 30px 0px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero-text{
     position: relative;
