@@ -9,12 +9,15 @@ syl.addEventListener("mouseout",function(){
 })
 
 
-let p = document.querySelector(".soci")
-let socis = document.querySelector(".drop-socials")
-let kkk = document.querySelector(".socials")
-p.addEventListener("mouseover",function(){
-    socis.style.display = "block"
-    socis.addEventListener("mouseout",function(){
-        this.style.display = "none"
-    })
+let social = document.querySelector(".socials")
+let socDrop = document.querySelector(".socials-drop")
+social.addEventListener("mouseover",()=>{
+    social.style.top= "67px"
+    social.style.height = "160px"
+    socDrop.style.display = "block"
+})
+social.addEventListener("mouseout", ()=>{
+    social.style.top= "0px"
+    social.style.height = ""
+    socDrop.style.display = "none"
 })
