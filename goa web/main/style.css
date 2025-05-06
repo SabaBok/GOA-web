@@ -25,6 +25,9 @@ header a{
     color: #fff;
     text-decoration: none;
 }
+.burger{
+    display: none !important;
+}
 .head-wrap{
     width: 95%;
     min-width: 350px;
@@ -165,7 +168,6 @@ header a{
     gap: 5px;
 }
 
-
 .socials{
     display: flex;
     flex-direction: column;
@@ -173,9 +175,6 @@ header a{
     position: relative;
     top: 0;
     padding: 5px;
-
-    /* top: 73px;
-    height: 170px; */
 }
 .socials-drop{
     display: none;
@@ -195,14 +194,17 @@ header a{
 }
 .socials-container a{
     text-decoration: underline;
-    color: rgb(65, 65, 224);
 }
+.socials-container div{
+    background-color: #3963ff;
+    border-radius: 7px;
+    padding: 5px;
+}
+
 
 
 main{
     font-family: "Lexend", sans-serif;
-    background-color: red;
-    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,6 +294,63 @@ main{
     }
 }
 
+.why-best{
+    width: 100%;
+    background-color: #f5f5f7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.why-best p{
+    width: 50%;
+    text-align: center;
+    opacity: 70%;
+}
+.why-best h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.best-info-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(175px,1fr));
+    gap: 20px;
+    width: 100%;
+    min-width: 350px;
+    max-width: 1100px;
+    align-items: center;
+    justify-items: center;
+}
+.best-info-cont div{
+    padding-right: 30px;
+    border-radius: 3px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+.best-info-cont div h2{
+    font-size: 3.3rem;
+    font-weight: 600;
+}
+.best-info-cont div span{
+    opacity: 70%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.why-best iframe{
+    border-radius: 10px;
+    min-height: 350px;
+    width: 90%;
+    max-width: 900px;
+    height: 600px;
+}
+
+
 
 
 
@@ -307,7 +366,23 @@ main{
         align-items: center;
     }
     .head-left ul{
-        display: none;
+        display: none !important;
+    }
+    .head-right{
+        display: none !important;
+    }
+    .burger{
+        display: block !important;
+    }
+    .hero-left{
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-best p{
+        width: 95%;
     }
 }
 
