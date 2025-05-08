@@ -8,7 +8,6 @@ syl.addEventListener("mouseout",function(){
     idk.style.display = "none"
 })
 
-
 let social = document.querySelector(".socials")
 let socDrop = document.querySelector(".socials-drop")
 social.addEventListener("mouseover",()=>{
