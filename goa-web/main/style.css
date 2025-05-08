@@ -26,6 +26,7 @@ header{
 }
 #side-bar{
     position: fixed;
+    transform: translateX(100%);
     font-family: "Sansation", sans-serif;
     overflow-y: scroll;
     top: 0;
@@ -39,6 +40,10 @@ header{
     text-align: center;
     /* display: none; */
     transition: 0.2s;
+}
+.escape{
+    color: red;
+    font-size: 1.7rem;
 }
 .a{
     display: block !important;
@@ -213,7 +218,7 @@ header a{
 }
 .side-socials{
     width: 95%;
-    
+
 }
 .side-bar-left ul li{
     text-align: center;

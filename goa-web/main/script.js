@@ -56,3 +56,14 @@ for(let i of sylCard){
         }
     })
 }
+
+
+let burger = document.querySelector(".burger")
+let sideBar = document.querySelector("#side-bar")   
+burger.addEventListener("click", e =>{
+    sideBar.style.transform = "translateX(0px)"
+})
+let escaper = document.querySelector(".escape")  
+escaper.addEventListener("click", e =>{
+    sideBar.style.transform = "translateX(100%)"
+})
