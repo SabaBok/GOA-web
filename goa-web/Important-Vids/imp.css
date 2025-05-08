@@ -5,7 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    height: 1000vh;
+    background-image: url(./photos/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 header{
     width: 100%;
@@ -26,6 +29,33 @@ header{
     padding: 10px 20px;
     position: relative;
     z-index: 22;
+}
+#side-bar{
+    position: fixed;
+    transform: translateX(100%);
+    font-family: "Sansation", sans-serif;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-image: url(../images/side-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 9999999999999999999999;
+    text-align: center;
+    /* display: none; */
+    transition: 0.2s;
+}
+.escape{
+    color: red;
+    font-size: 1.7rem;
+}
+.a{
+    display: block !important;
+}
+.akk{
+    justify-self: center;
 }
 header a{
     color: #fff;
@@ -174,6 +204,117 @@ header a{
     gap: 5px;
 }
 
+.side-bar-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    padding: 20px 0px;
+}
+.side-bar-left ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+}
+.side-socials{
+    width: 95%;
+
+}
+.side-bar-left ul li{
+    text-align: center;
+    display: flex;
+    font-size: 13px;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    z-index: 3333333;
+    cursor: pointer;
+}
+.side-bar-left ul li::after{
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.25s ease-in-out;
+    transform: scaleX(0);
+}
+.side-bar-left ul li:hover::after{
+    transform: scale(1);
+}
+.side-syl{
+    transition: 0.3s;
+}
+.hidden-sylab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* background-color: #ffffff36; */
+    border-radius: 10px;
+    width: 90%;
+    padding: 5px 0px;
+    transition: 0.2s;
+    user-select: none;
+}
+.hidden-sylab-expand{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s;
+    overflow-y: hidden;
+    height: 0px;
+}
+.syl-card{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    transition: 0.2s;
+    border-radius: 3px;
+    padding: 5px 0px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.syl-card h4{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+}
+.syl-card h4:active{
+    color: #3963ff;
+}
+.syl-card h4:hover{
+    color: #3963ff;
+}
+.syl-card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s;
+    height: 0px;
+    overflow-y: hidden;
+}
+.syl-card div p{
+    border-bottom: 2px solid green;
+    border-radius: 5px;
+    width: 95%;
+}
+
 .socials{
     display: flex;
     flex-direction: column;
@@ -205,4 +346,74 @@ header a{
     background-color: #3963ff;
     border-radius: 7px;
     padding: 5px;
+}
+
+main{
+    width: 100%;
+}
+#main-all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+main section{
+    width: 95%;
+    min-width: 360px;
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #ffffff27;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+main section video,main section iframe{
+    border-radius: 10px;
+    width: 80%;
+    min-width: 350px;
+    height: 350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .drop-sylab{
+        width: 230px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 500px;
+        align-items: center;
+    }
+    .head-left ul{
+        display: none !important;
+    }
+    .head-right{
+        display: none !important;
+    }
+    .burger{
+        display: block !important;
+    }
+    .hero-left{
+        background-color: transparent;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
