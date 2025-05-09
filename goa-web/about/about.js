@@ -67,3 +67,18 @@ let escaper = document.querySelector(".escape")
 escaper.addEventListener("click", e =>{
     sideBar.style.transform = "translateX(100%)"
 })
+
+let nika = document.querySelector(".nika").querySelector("img")
+let nikaOpen = false
+nika.addEventListener("click", e =>{
+    let panel = document.querySelectorAll(".kaka")
+    for(let i of panel){
+        if(nikaOpen == false){
+            i.style.display = "block"
+            nikaOpen = true
+        }else{
+            i.style.display = "none"
+            nikaOpen = false
+        }
+    }
+})
