@@ -8,13 +8,9 @@
 }
 
 body {
-    background: 
-        linear-gradient(90deg, #7E898F 0%, #636C75 100%), 
-        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.55) 100%), 
-        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.08) 63%);
-    background-blend-mode: multiply, screen;
-    color: #333;
-
+    background: #A2A2A2;
+    background-image: radial-gradient(at 50% 90%, #B8B4B3 0%, #3B3A38 100%);
+    background-blend-mode: normal,multiply;
 }
 
 header {
@@ -421,8 +417,12 @@ main {
 
 #main-all section {
     cursor: pointer;
-    background-color: #ffffff07;
-    backdrop-filter: blur(20px);
+        background: 
+        linear-gradient(90deg, #7E898F 0%, #636C75 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.55) 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.08) 63%);
+    background-blend-mode: multiply, screen;
+    color: #333;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
