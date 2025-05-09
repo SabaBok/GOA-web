@@ -1,24 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
 }
-body{
-    background-image: url(./photos/bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+body {
+    background: 
+        linear-gradient(90deg, #7E898F 0%, #636C75 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.55) 100%), 
+        radial-gradient(at top, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.08) 63%);
+    background-blend-mode: multiply, screen;
+    color: #333;
+
 }
-header{
+
+header {
     width: 100%;
     height: 70px;
     position: sticky;
     top: 0;
     z-index: 9999999999999999999999;
 }
-#idk{
+
+#idk {
     font-family: "Sansation", sans-serif;
     display: flex;
     align-items: center;
@@ -31,7 +38,8 @@ header{
     position: relative;
     z-index: 22;
 }
-#side-bar{
+
+#side-bar {
     position: fixed;
     transform: translateX(100%);
     font-family: "Sansation", sans-serif;
@@ -48,24 +56,30 @@ header{
     /* display: none; */
     transition: 0.2s;
 }
-.escape{
+
+.escape {
     color: red;
     font-size: 1.7rem;
 }
-.a{
+
+.a {
     display: block !important;
 }
-.akk{
+
+.akk {
     justify-self: center;
 }
-header a{
+
+header a {
     color: #fff;
     text-decoration: none;
 }
-.burger{
+
+.burger {
     display: none !important;
 }
-.head-wrap{
+
+.head-wrap {
     width: 95%;
     min-width: 350px;
     max-width: 1300px;
@@ -73,26 +87,30 @@ header a{
     align-items: center;
     justify-content: space-between;
 }
-.head-left img{
-    width: 60px;    
+
+.head-left img {
+    width: 60px;
     height: 60px;
     cursor: pointer;
     border-radius: 10px;
 }
-.head-left{
+
+.head-left {
     position: relative;
     z-index: 11;
     display: flex;
     gap: 50px;
     align-items: center;
 }
-.head-left ul{
+
+.head-left ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
     align-items: center;
 }
-.head-left ul li{
+
+.head-left ul li {
     text-align: center;
     display: flex;
     font-size: 13px;
@@ -102,7 +120,8 @@ header a{
     z-index: 3333333;
     cursor: pointer;
 }
-.head-left ul li::after{
+
+.head-left ul li::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -113,15 +132,18 @@ header a{
     transition: 0.25s ease-in-out;
     transform: scaleX(0);
 }
-.head-left ul li:hover::after{
+
+.head-left ul li:hover::after {
     transform: scale(1);
 }
-.head-right{
+
+.head-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.head-right p{
+
+.head-right p {
     text-align: center;
     display: flex;
     font-size: 13px;
@@ -130,7 +152,8 @@ header a{
     position: relative;
     cursor: pointer;
 }
-.head-right p::after{
+
+.head-right p::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -141,10 +164,12 @@ header a{
     transition: 0.25s ease-in-out;
     transform: scaleX(0);
 }
-.head-right p:hover::after{
+
+.head-right p:hover::after {
     transform: scale(1);
 }
-.i{
+
+.i {
     width: 40px;
     height: 40px;
     display: flex;
@@ -158,17 +183,20 @@ header a{
     z-index: 99999999;
     display: flex;
     align-content: center;
-    justify-content: center; 
+    justify-content: center;
 }
-.sylabus{
+
+.sylabus {
     position: relative;
 }
-.syl-li{
+
+.syl-li {
     cursor: pointer;
     position: relative;
     z-index: 22222;
 }
-.idk{
+
+.idk {
     display: flex;
     gap: 20px;
     align-items: start;
@@ -176,36 +204,40 @@ header a{
     color: #000;
     flex-wrap: wrap;
     background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0,0,0,.25),
-    0 -4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .25),
+        0 -4px 10px rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid #e1e3e7;
     z-index: 1111;
     width: 800px;
 }
-.drop-sylab{
+
+.drop-sylab {
     bottom: -480px;
     position: absolute;
     padding-top: 60px;
     transform: translateX(-30%);
     display: none;
 }
-.sylab-left{
+
+.sylab-left {
     box-shadow: 10px 5px 10px #00000025;
     border-radius: 7px;
 }
-.syl-drop{
+
+.syl-drop {
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.syl-text{
+
+.syl-text {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.side-bar-wrap{
+.side-bar-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +247,8 @@ header a{
     height: 100%;
     padding: 20px 0px;
 }
-.side-bar-left ul{
+
+.side-bar-left ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -223,11 +256,13 @@ header a{
     gap: 10px;
     font-size: 1.3rem;
 }
-.side-socials{
+
+.side-socials {
     width: 95%;
 
 }
-.side-bar-left ul li{
+
+.side-bar-left ul li {
     text-align: center;
     display: flex;
     font-size: 13px;
@@ -237,7 +272,8 @@ header a{
     z-index: 3333333;
     cursor: pointer;
 }
-.side-bar-left ul li::after{
+
+.side-bar-left ul li::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -248,25 +284,28 @@ header a{
     transition: 0.25s ease-in-out;
     transform: scaleX(0);
 }
-.side-bar-left ul li:hover::after{
+
+.side-bar-left ul li:hover::after {
     transform: scale(1);
 }
-.side-syl{
+
+.side-syl {
     transition: 0.3s;
 }
-.hidden-sylab{
+
+.hidden-sylab {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    /* background-color: #ffffff36; */
     border-radius: 10px;
     width: 90%;
     padding: 5px 0px;
     transition: 0.2s;
     user-select: none;
 }
-.hidden-sylab-expand{
+
+.hidden-sylab-expand {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -276,7 +315,8 @@ header a{
     overflow-y: hidden;
     height: 0px;
 }
-.syl-card{
+
+.syl-card {
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -289,19 +329,23 @@ header a{
     border-left: 1px solid #fff;
     border-right: 1px solid #fff;
 }
-.syl-card h4{
+
+.syl-card h4 {
     text-decoration: underline;
     cursor: pointer;
     transition: 0.2s;
     user-select: none;
 }
-.syl-card h4:active{
+
+.syl-card h4:active {
     color: #3963ff;
 }
-.syl-card h4:hover{
+
+.syl-card h4:hover {
     color: #3963ff;
 }
-.syl-card div{
+
+.syl-card div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,13 +354,14 @@ header a{
     height: 0px;
     overflow-y: hidden;
 }
-.syl-card div p{
+
+.syl-card div p {
     border-bottom: 2px solid green;
     border-radius: 5px;
     width: 95%;
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -324,12 +369,14 @@ header a{
     top: 0;
     padding: 5px;
 }
-.socials-drop{
+
+.socials-drop {
     display: none;
     position: relative;
     top: 10px;
 }
-.socials-container{
+
+.socials-container {
     display: flex;
     width: 100px;
     flex-direction: column;
@@ -338,81 +385,119 @@ header a{
     padding: 10px 5px;
     text-align: center;
     border-radius: 7px;
-    background-color: lightsalmon; 
+    background-color: lightsalmon;
 }
-.socials-container a{
+
+.socials-container a {
     text-decoration: underline;
 }
-.socials-container div{
+
+.socials-container div {
     background-color: #3963ff;
     border-radius: 7px;
     padding: 5px;
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
-main{
-    width: 100%;
-    height: 100%;
+main {
+    padding: 20px;
+    background-color: transparent;
 }
-#main-all{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-}
-#main-all section{
-    /* width: 95%; */
-    min-width: 350px;
-    padding: 10px 5px;
+
+#main-all {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    justify-items: center;
-    align-items: center;
-    background-color: #ffffff27;
-    backdrop-filter: blur(5px);
-    border: 1px solid white;
-    box-shadow: 0px 0px 10px #000;
-    border-radius: 10px;
-}
-#main-all section video,#main-all section iframe{
-    border-radius: 10px;
-    width: 80%;
-    min-width: 350px;
-    height: 350px;
+    background-color: transparent;
+
 }
 
+#main-all section {
+    cursor: pointer;
+    background-color: #ffffff07;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
 
+video,
+iframe {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
 
-@media (max-width:500px) {
-    #main-all{
-        transform: scale(0.8);
+section div {
+    padding: 15px;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+section div p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.2rem;
     }
-    #main-all section{
 
+    section p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:500px) {
+    #main-all {
+        transform: scale(0.8);
     }
 }
 @media (max-width:900px) {
-    .drop-sylab{
+    .drop-sylab {
         width: 230px;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 500px;
         align-items: center;
     }
-    .head-left ul{
+
+    .head-left ul {
         display: none !important;
     }
-    .head-right{
+
+    .head-right {
         display: none !important;
     }
-    .burger{
+
+    .burger {
         display: block !important;
     }
-    .hero-left{
+
+    .hero-left {
         background-color: transparent;
         width: 100%;
         display: flex;

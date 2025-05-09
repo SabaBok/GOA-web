@@ -72,13 +72,22 @@ let nika = document.querySelector(".nika").querySelector("img")
 let nikaOpen = false
 nika.addEventListener("click", e =>{
     let panel = document.querySelectorAll(".kaka")
-    for(let i of panel){
-        if(nikaOpen == false){
-            i.style.display = "block"
-            nikaOpen = true
-        }else{
-            i.style.display = "none"
+    if(nikaOpen == false){
+        panel[0].style.display = "block"
+        panel[1].style.display = "block"
+        nikaOpen = true
+    }else{
+        panel[0].style.animation = "deSpawn 0.5s ease-in-out"
+        panel[1].style.animation = "deSpawn 0.5s ease-in-out"
+
+        setTimeout(() => {
+            panel[1].style.display = "none"
+            panel[0].style.display = "none"
             nikaOpen = false
-        }
+            panel[0].style.animation = "spawn 0.5s ease-in-out"
+            panel[1].style.animation = "spawn 0.5s ease-in-out"
+        }, timeout = 500);
+
+
     }
 })

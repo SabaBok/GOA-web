@@ -257,7 +257,6 @@ header a {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	/* background-color: #ffffff36; */
 	border-radius: 10px;
 	width: 90%;
 	padding: 5px 0px;
@@ -411,150 +410,6 @@ main {
 	color: #555;
 }
 
-/* .team-section {
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.team-section {
-	width: 100%;
-	margin-top: 40px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.team-section h2 {
-	text-align: center;
-	font-size: 2rem;
-	margin-bottom: 20px;
-	color: #34495e;
-}
-.team-container.open .panel-wrapper.left .team,
-.team-container.open .panel-wrapper.right .team {
-	visibility: visible;
-	position: relative;
-}
-.panel-wrapper .team {
-	visibility: hidden;
-	position: absolute;
-}
-.team-container {
-	display: grid;
-	grid-template-columns: 1fr auto 1fr;
-	align-items: center;
-	justify-items: center;
-	width: 100%;
-	position: relative;
-}
-.panel-wrapper {
-	overflow: hidden;
-	max-width: 100%;
-	min-height: 160px;
-	height: 100%;
-	padding: 5px;
-	max-width: 100%;
-	transition: max-width 0.6s ease, max-height 0.6s ease, opacity 0.6s ease;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	opacity: 0;
-}
-.panel-wrapper.left,
-.panel-wrapper.right {
-	max-width: 0;	
-}
-.team-container.open .panel-wrapper.left,
-.team-container.open .panel-wrapper.right {
-	max-width: 1000px;
-	width: 100%;
-	min-width: 350px;
-	opacity: 1;
-}
-.team {
-	font-size: 1.2rem;
-	width: 100%;
-	padding: 20px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	background-color: #f4f4f4;
-	border: 1px solid #ccc;
-}
-.team-left {
-	text-align: right;
-	justify-content: flex-end;
-}
-.team-right {
-	text-align: left;
-	justify-content: flex-start;
-}
-.team-member {
-	text-align: center;
-	width: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	cursor: pointer;
-	padding: 20px;
-}
-.team-member img {
-	width: 100%;
-	border-radius: 50%;
-	margin-bottom: 10px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	transition: 0.25s;
-}
-.team-member img:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-.team-member h3 {
-	font-size: 1.3rem;
-	margin-bottom: 5px;
-	color: #2c3e50;
-}
-.team-member p {
-	font-size: 1rem;
-	color: #555;
-}
-.team-section h2 {
-	text-align: center;
-	font-size: 2rem;
-	margin-bottom: 20px;
-	color: #34495e;
-}
-.team-member {
-	text-align: center;
-	width: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.team-member img {
-	width: 100%;
-	border-radius: 50%;
-	margin-bottom: 10px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	transition: 0.25s;
-	cursor: pointer;
-}
-.team-member img:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-.team-member h3 {
-	font-size: 1.3rem;
-	margin-bottom: 5px;
-	color: #2c3e50;
-}
-.team-member p {
-	font-size: 1rem;
-	color: #555;
-} */
-
-
-
 .team-section {
 	margin-top: 40px;
 	display: flex;
@@ -592,19 +447,29 @@ main {
 	align-items: center;
 	justify-content: center;
 }
-/* .kaka{
+.kaka{
 	display: none;
 	animation: spawn 0.5s ease-in-out;
-} */
+	min-height: 160px;
+	height: 100%;
+}
 @keyframes spawn {
 	0% {
 		transform: scale(0);
 	}
 	100% {
 		transform: scale(1);
-	}
-	
+	}	
 }
+@keyframes deSpawn {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}	
+}
+
 .team {
 	font-size: 1.2rem;
 	width: 100%;
@@ -686,16 +551,6 @@ main {
 	font-size: 1rem;
 	color: #555;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -770,29 +625,9 @@ main {
 
 
 @media (max-width: 1000px) {
-	/* .panel-wrapper {
-		height: auto;
-	}
 	.team-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		grid-template-columns: 1fr;
 	}
-	.team p{
-		text-align: center;
-	}
-	.panel-wrapper {
-		max-width: none;
-		max-height: 0;
-		opacity: 0;
-		transition: max-height 0.6s ease, opacity 0.6s ease;
-	}
-	.team-container.open .panel-wrapper {
-		max-height: 400px;
-		opacity: 1;
-	} */
-
-
 	.drop-sylab {
 		width: 230px;
 		overflow-y: scroll;
